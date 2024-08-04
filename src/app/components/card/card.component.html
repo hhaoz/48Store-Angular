@@ -1,0 +1,27 @@
+<div class="card-holder">
+  <img src="./assets/img/img.png" alt="">
+  <h2>{{ this.name }}</h2>
+  <h3>{{ this.description }}</h3>
+  <h3>{{ this.price }}</h3>
+  <h4>{{ this.inStock }}</h4>
+  <!--  <button >Add to cart-->
+  <!--  </button>-->
+
+  <!--  <mat-card class="example-card">-->
+  <!--    <img mat-card-image src="./assets/img/img.png" alt="">-->
+  <!--    <mat-card-content>-->
+  <!--      <mat-card-title>{{ this.name }}</mat-card-title>-->
+  <!--      <mat-card-subtitle>{{ this.price }}</mat-card-subtitle>-->
+  <button mat-flat-button color="primary" (click)="addToCart({id: this.id,
+  name: this.name,
+  price: this.price,
+  quantity: 1})">Add to cart
+  </button>
+
+  <!--    </mat-card-content>-->
+  <!--  </mat-card>-->
+
+
+</div>
+
+

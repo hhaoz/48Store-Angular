@@ -1,0 +1,36 @@
+#card-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.cart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0;
+  border-bottom: 1px solid #333;
+}
+
+#cart-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 50px;
+}
+
+.cart-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.cart-detail {
+  margin: 0 25px;
+}
+
