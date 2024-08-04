@@ -16,7 +16,7 @@ export class AppComponent {
 
   constructor(public cartService: CartService) {}
 
-  removeFromCart(index: any) {
+  removeFromCart(index: number) {
     this.cartService.removeFromCart(index);
   }
 

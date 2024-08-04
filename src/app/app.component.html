@@ -4,7 +4,6 @@
       <app-card
         [id]="prod.id"
         [name]="prod.name"
-        [description]="prod.description"
         [price]="prod.price"
         [inStock]="prod.inStock">
       </app-card>
@@ -14,20 +13,17 @@
   <div id="cart-container">
     <h1>Cart</h1>
     <div class="cart-content">
-
       @for (item of cartService.cart; track $index) {
         <div class="cart-detail">
           <h2>{{ item.name }}</h2>
           <h3>Quantity: {{ item.quantity }}</h3>
           <h3>Price: {{ item.price * item.quantity }}</h3>
-          <button mat-flat-button color="primary" (click)="removeFromCart($index)">Remove
-          </button>
+          <button mat-flat-button color="primary" (click)="removeFromCart($index)">Remove</button>
         </div>
-
       }
     </div>
-
   </div>
+
 </div>
 
 

@@ -24,15 +24,7 @@ export class CardComponent {
   @Input()
   name = '';
   @Input()
-  description = '';
-  @Input()
   price = 0;
   @Input()
   inStock = 0;
-
-  // @Output() buttonClick = new EventEmitter<any>();
-
-  // clickButton(value: any) {
-  //   this.buttonClick.emit(value);
-  // }
 }
