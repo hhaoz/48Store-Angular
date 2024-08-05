@@ -1,0 +1,34 @@
+<div id="container">
+  <div class="left">
+    <img [routerLink]="['/home']" id="logo" src="assets/img/logo.png" alt="logo">
+
+    <ul>
+      <li [routerLink]="['/products']">Nam</li>
+      <li [routerLink]="['/products']">Nữ</li>
+      <li [routerLink]="['/products']">Unisex</li>
+      <li [routerLink]="['/products']">Phụ kiện</li>
+    </ul>
+  </div>
+
+  <div class="right">
+    <div class="search">
+      <input class="search-input" type="text" placeholder="Tìm kiếm sản phẩm">
+      <mat-icon class="search-icon" aria-hidden="false" aria-label="Example home icon" fontIcon="search"></mat-icon>
+    </div>
+
+    @if (this.authService.currentUser) {
+      <div (click)="this.logout()" class="sign-up">
+        <p>Đăng xuất</p>
+      </div>
+    } @else {
+      <div (click)="this.login()" class="sign-in">
+        <p>Đăng nhập</p>
+      </div>
+    }
+
+    <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="shopping_cart"></mat-icon>
+    @if (this.authService.currentUser) {
+      <img class="img" src="{{this.authService.currentUser.photoURL}}" alt="">
+    }
+  </div>
+</div>

@@ -1,12 +1,10 @@
 .card-holder {
   width: 80%;
   display: flex;
-  //justify-content: center;
-  //align-items: center;
   flex-direction: column;
-  //padding: 25px 50px;
   border-radius: 8px;
-  margin: 0 25px;
+  margin: 30px 25px;
+  cursor: pointer;
 }
 
 img {

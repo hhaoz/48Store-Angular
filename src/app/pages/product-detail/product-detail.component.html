@@ -1,0 +1,61 @@
+<div id="container">
+  <div class="imgs">
+    <div class="small-img">
+      <img src="{{detailProduct.img}}" alt="">
+      <img src="{{detailProduct.img}}" alt="">
+      <img src="{{detailProduct.img}}" alt="">
+      <img src="{{detailProduct.img}}" alt="">
+    </div>
+
+    <div class="big-img">
+      <img src="{{detailProduct.img}}" alt="">
+    </div>
+  </div>
+
+  <div class="detail">
+    <h1 class="product-name">{{ detailProduct.name }}</h1>
+
+    <div class="status">
+      <p class="solved">Đã bán: 484</p>
+      <p class="instock">Instock: {{ detailProduct.inStock }}</p>
+    </div>
+
+    <h1 class="product-price">{{ detailProduct.price }} đ</h1>
+
+    <div class="color">
+      <p>Màu sắc:</p>
+      <div class="circle"></div>
+    </div>
+
+    <div class="size">
+      <p>Size:</p>
+      <div class="size-content">
+        <div class="sizeM">M</div>
+        <div class="sizeL">L</div>
+        <div class="sizeXL">XL</div>
+      </div>
+    </div>
+
+    <div class="quantity">
+      <p>Số lượng:</p>
+      <input type="number">
+    </div>
+
+    <div class="button">
+      <button mat-stroked-button color="primary">Buy now</button>
+      <button mat-flat-button color="primary" (click)="addToCart(
+      {
+        id: detailProduct.id,
+        name: detailProduct.name,
+        price: detailProduct.price,
+        quantity: 1})">
+        Add to cart
+      </button>
+    </div>
+
+    <div class="description-container">
+      <h2>Mô tả sản phẩm:</h2>
+      <p class="product-description">{{ detailProduct.decription }}</p>
+    </div>
+  </div>
+</div>

@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { ProductModel } from '../models/product.model';
 
 @Injectable({
   providedIn: 'root',
@@ -6,29 +7,37 @@ import { Injectable } from '@angular/core';
 export class CartService {
   constructor() {}
 
-  products = [
+  products: ProductModel[] = [
     {
       id: 1,
-      name: 'Product 1',
-      price: 100,
+      name: 'Áo thun sợi nhân tạo',
+      price: 229000,
+      decription: 'Áo thun sợi nhân tạo, thoáng mát, thấm hút mồ hôi tốt',
+      img: 'assets/img/product1.png',
       inStock: 10,
     },
     {
       id: 2,
-      name: 'Product 2',
-      price: 200,
+      name: 'Áo thun trơn cổ tròn',
+      price: 199000,
+      decription: '',
+      img: 'assets/img/product2.png',
       inStock: 5,
     },
     {
       id: 3,
-      name: 'Product 3',
-      price: 300,
+      name: 'Áo thun trơn tay dài',
+      price: 249000,
+      decription: '',
+      img: 'assets/img/product3.png',
       inStock: 1,
     },
     {
       id: 4,
-      name: 'Product 4',
-      price: 400,
+      name: 'Áo thun tay ngắn họa tiết',
+      price: 199000,
+      decription: '',
+      img: 'assets/img/product4.png',
       inStock: 4,
     },
   ];
