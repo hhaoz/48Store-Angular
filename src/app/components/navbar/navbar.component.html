@@ -26,7 +26,8 @@
       </div>
     }
 
-    <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="shopping_cart"></mat-icon>
+    <mat-icon [routerLink]="['/cart']" aria-hidden="false" aria-label="Example home icon"
+              fontIcon="shopping_cart"></mat-icon>
     @if (this.authService.currentUser) {
       <img class="img" src="{{this.authService.currentUser.photoURL}}" alt="">
     }

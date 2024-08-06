@@ -33,7 +33,7 @@ export class ProductDetailComponent {
     if (this.authService.currentUser) {
       this.cartService.addToCart(value);
     } else {
-      alert('Please login');
+      alert('Vui lòng đăng nhập');
     }
   }
 }

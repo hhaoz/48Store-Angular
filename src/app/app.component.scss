@@ -5,26 +5,3 @@
   align-items: center;
   flex-direction: column;
 }
-
-app-navbar {
-  width: 100%;
-}
-
-#cart-container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding-top: 50px;
-}
-
-.cart-content {
-  width: 100%;
-  display: flex;
-  align-items: center;
-}
-
-.cart-detail {
-  margin: 0 25px;
-}

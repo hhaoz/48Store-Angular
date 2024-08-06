@@ -1,0 +1,29 @@
+#container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 125px;
+}
+
+.empty-cart {
+  width: 300px;
+}
+
+.cart-content {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.cart-content img {
+  width: 100px;
+  height: 100px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.cart-detail {
+  margin: 0 25px;
+}

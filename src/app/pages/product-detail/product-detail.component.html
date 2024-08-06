@@ -17,7 +17,7 @@
 
     <div class="status">
       <p class="solved">Đã bán: 484</p>
-      <p class="instock">Instock: {{ detailProduct.inStock }}</p>
+      <p class="inStock">Trong kho: {{ detailProduct.inStock }}</p>
     </div>
 
     <h1 class="product-price">{{ detailProduct.price }} đ</h1>
@@ -42,14 +42,22 @@
     </div>
 
     <div class="button">
-      <button mat-stroked-button color="primary">Buy now</button>
       <button mat-flat-button color="primary" (click)="addToCart(
       {
         id: detailProduct.id,
         name: detailProduct.name,
         price: detailProduct.price,
+        img: detailProduct.img,
         quantity: 1})">
-        Add to cart
+        Mua ngay
+      </button>
+      <button mat-stroked-button color="primary" (click)="addToCart(
+      {
+        id: detailProduct.id,
+        name: detailProduct.name,
+        price: detailProduct.price,
+        img: detailProduct.img,
+        quantity: 1})">Thêm vào giỏ hàng
       </button>
     </div>
 
