@@ -65,6 +65,7 @@
 .search-icon {
   color: var(--primary-color);
   width: 8%;
+  cursor: pointer;
 }
 
 #container p {
@@ -79,4 +80,8 @@
 .img {
   width: 40px;
   border-radius: 50%;
+}
+
+.cart-icon {
+  cursor: pointer;
 }

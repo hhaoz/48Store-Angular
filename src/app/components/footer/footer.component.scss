@@ -1,0 +1,149 @@
+.container {
+  width: 100%;
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 26px 20px;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.brand {
+  flex: 1 1 100%;
+  text-align: center;
+}
+
+.brand .logo {
+  width: 150px;
+}
+
+.brand p {
+  font-size: 16px;
+  color: #aaa;
+}
+
+/* Navigation Links */
+.links {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+
+.column h4 {
+  font-size: 16px;
+  color: #ffcb05;
+  margin-bottom: 10px;
+}
+
+.column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.column li {
+  margin-bottom: 5px;
+}
+
+.label {
+  font-weight: 500;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+.column a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.column a:hover {
+  color: #ffcb05;
+}
+
+.information {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+
+/* Social Media Links */
+.social {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  .social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+
+    //filter: grayscale(50%);
+    transition: translate, filter;
+    transition-duration: 0.3s;
+
+    .social-icon {
+      width: 14px;
+      filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7482%) hue-rotate(72deg) brightness(99%) contrast(99%);
+    }
+
+    &:hover {
+      filter: grayscale(0);
+      translate: 0 -3px;
+    }
+  }
+
+  .facebook {
+    background: #4863a9;
+  }
+
+  .youtube {
+    background: #f00;
+  }
+
+  .tiktok {
+    background: #000;
+  }
+
+  .twitter {
+    background: #4999e6;
+  }
+
+  .linkedin {
+    background: #2f71ab;
+  }
+}
+
+.contact {
+  flex: 1 1 100%;
+  text-align: center;
+}
+
+.contact a {
+  color: #ffcb05;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* Copyright Notice */
+.bottom {
+  flex: 1 1 100%;
+  text-align: center;
+  font-size: 14px;
+  color: #aaa;
+}
